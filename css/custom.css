@@ -1,0 +1,518 @@
+@font-face {
+    font-family: futuralt;
+    src: url(../fonts/FuturaLT.ttf);
+}
+
+@font-face {
+    font-family: futuraltbold;
+    src: url(../fonts/FuturaLT-Bold.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
+    #logo {
+        max-width: 30% !important;
+    }
+    .proyectos {
+        width: 920px;
+    }
+    .footarea {
+        width: 920px;
+        padding: 5%;
+    }
+    .middlefooter {
+        padding: 0;
+    }
+    h2 {
+        margin-bottom: 3vh;
+    }
+}
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    /* Styles */
+}
+
+
+/* Smartphones (portrait) ----------- */
+
+
+/* viewport size <= 320px ----------- */
+
+@media only screen and (max-width: 320px) {
+    /* Styles */
+    #logo {
+        max-width: 30% !important;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */
+    .proyectos {
+        width: 920px;
+    }
+    .footarea {
+        width: 920px;
+        padding: 5%;
+    }
+}
+
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+    #logo {
+        max-width: 30% !important;
+    }
+}
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    #logo {
+        max-width: 12% !important;
+    }
+    .proyectos {
+        width: 1030px;
+    }
+    .footarea {
+        width: 1030px;
+        padding-top: 10vh;
+    }
+    .middlefooter {
+        padding-top: 10vh;
+    }
+    h2 {
+        margin-bottom: 6vh;
+    }
+    /* Styles */
+}
+
+
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+    /* Styles */
+    #logo {
+        max-width: 12% !important;
+    }
+    .proyectos {
+        width: 1030px;
+    }
+    .footarea {
+        width: 1030px;
+        padding-top: 10vh;
+    }
+    .middlefooter {
+        padding-top: 10vh;
+    }
+    h2 {
+        margin-bottom: 6vh;
+    }
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.logo {
+    max-width: 100%;
+    text-align: center;
+}
+
+#logo {
+    max-width: 12% !important;
+}
+
+.carousel-item img {
+    height: 543px;
+}
+
+.carousel-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+}
+
+
+/*
+Removes white gap between slides - chagnge to base color of slide images
+*/
+
+.carousel {
+    background: #007aeb;
+}
+
+
+/*
+  Forces image to be 100% width and not max width of 100%
+  */
+
+.carousel-item .img-fluid {
+    width: 100%;
+}
+
+.white {
+    color: white !important;
+}
+
+
+/* 
+  anchors are inline so you need ot make them block to go full width
+  */
+
+.carousel-item a {
+    display: block;
+    width: 100%;
+}
+
+.carousel-caption {
+    top: 39%;
+}
+
+
+/* Ninja Button styles */
+
+.ninja-btn {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 44px;
+    height: 28.66666667px;
+    cursor: pointer;
+    padding: 0;
+    z-index: 2;
+}
+
+.ninja-btn span,
+.ninja-btn span:before,
+.ninja-btn span:after {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+    width: 33px;
+    height: 2px;
+}
+
+.ninja-btn span {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 13.33333333px;
+}
+
+.ninja-btn span:before,
+.ninja-btn span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.ninja-btn span:before {
+    top: -13.33333333px;
+}
+
+.ninja-btn span:after {
+    top: 13.33333333px;
+}
+
+
+/* Ninja Button */
+
+.ninja-btn.active span {
+    background-color: transparent;
+}
+
+.ninja-btn.active span:before,
+.ninja-btn.active span:after {
+    top: 0;
+}
+
+.ninja-btn.active span:before {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+}
+
+.ninja-btn.active span:after {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 2%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #dad5d5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 86px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+}
+
+.sidenav a:hover {
+    color: #a9a9a9;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.selector-menu {
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    top: 18px;
+    margin-left: 1vh;
+    display: none;
+}
+
+p.white-s {
+    font-size: 16px;
+    color: white;
+}
+
+.bold {
+    font-family: futuraltbold !important;
+}
+
+h1 {
+    font-family: futuralt;
+}
+
+body {
+    font-family: montserrat;
+}
+
+.push {
+    height: 5vh;
+}
+
+.img-project {
+    min-height: 187px;
+}
+
+.full-width-image {
+    min-height: 420px;
+    position: relative;
+    background: url("../img/city_footer.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* .full-width-image:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+} */
+
+.full-width-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(black, black);
+    opacity: .9;
+}
+
+.gray {
+    color: #828083;
+}
+
+footer a {
+    color: white;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #828083;
+}
+
+footer span {
+    color: white;
+}
+
+span img {
+    margin-right: 12px;
+}
+
+.lastfooter {
+    background-color: #cc362c;
+    min-height: 100px;
+}
+
+
+/* Ninja Button styles */
+
+.ninja2-btn {
+    display: inline-block;
+    float: left;
+    width: 44px;
+    height: 28.66666667px;
+    cursor: pointer;
+    padding: 0;
+    z-index: 2;
+    left: 4vh;
+    top: 4vh;
+    position: absolute;
+}
+
+.ninja2-btn span,
+.ninja2-btn span:before,
+.ninja2-btn span:after {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    background-color: rgb(2, 2, 2);
+    width: 33px;
+    height: 2px;
+}
+
+.ninja2-btn span {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 13.33333333px;
+}
+
+.ninja2-btn span:before,
+.ninja2-btn span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.ninja2-btn span:before {
+    top: -13.33333333px;
+}
+
+.ninja2-btn span:after {
+    top: 13.33333333px;
+}
+
+
+/* Ninja Button */
+
+.ninja2-btn.active span {
+    background-color: transparent;
+}
+
+.ninja2-btn.active span:before,
+.ninja2-btn.active span:after {
+    top: 0;
+}
+
+.ninja2-btn.active span:before {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+}
+
+.ninja2-btn.active span:after {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+}
+
+.upcase {
+    text-transform: uppercase !important;
+}
