@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+$route['firma'] = 'pages/firma'; 
 $route['categorias/borrar/(:any)'] = 'categories/borrar/$1';
 $route['admin/proyectos/actualizar'] = 'posts/update';
 $route['admin'] = 'admin/dashboard';

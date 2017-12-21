@@ -11,4 +11,16 @@
             $this->load->view('templates/footer');
 
         }
+
+        public function firma(){
+            
+            $this->load->view('templates/header');
+            $this->load->view('pages/nuestrafirma');
+            $this->load->view('templates/footer');
+            
+        }
+      
+
+
+
     }

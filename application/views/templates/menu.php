@@ -3,7 +3,7 @@
             <a href="<?php echo base_url() ?>">_01 HOME
                 <span class="selector-menu"></span>
             </a>
-            <a href="#">_02 Nuestra Firma
+            <a href="<?php base_url('firma');?>">_02 Nuestra Firma
                 <span class="selector-menu"></span>
             </a>
             <a href="#">_03 Servicios

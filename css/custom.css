@@ -107,6 +107,15 @@
     h2 {
         margin-bottom: 6vh;
     }
+    .mosaico-container {
+        height: 100%;
+        max-height: 309px;
+    }
+    .bigimg-container {
+        padding-right: 10px !important;
+        height: 100%;
+        max-height: 628px;
+    }
     /* Styles */
 }
 
@@ -130,6 +139,15 @@
     }
     h2 {
         margin-bottom: 6vh;
+    }
+    .mosaico-container {
+        height: 100%;
+        max-height: 390px;
+    }
+    .bigimg-container {
+        padding-right: 5px !important;
+        height: 100%;
+        max-height: 820px;
     }
 }
 
@@ -182,6 +200,10 @@ Removes white gap between slides - chagnge to base color of slide images
 
 .white {
     color: white !important;
+}
+
+.red {
+    color: #d43532;
 }
 
 
@@ -515,4 +537,68 @@ span img {
 
 .upcase {
     text-transform: uppercase !important;
+}
+
+.wrapper2 {
+    position: relative;
+}
+
+.img-holder .caption {
+    position: absolute;
+    width: 100%;
+    bottom: 35%;
+}
+
+.img-holder {
+    position: relative;
+}
+
+
+/*TEST */
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

@@ -5,11 +5,6 @@
         public function index(){
 
 
-                if(!$this->session->userdata('logged_in')){
-                    $this->session->set_flashdata('error_admin', 'No eres administrador'); 
-                    redirect('admin/login');
-                }
-
 
                     $data['titulo'] = 'Proyectos';
                     
@@ -296,6 +291,16 @@
             }
 
 
+        }
+
+
+        public function firma(){
+            echo "gay";
+            die();
+            
+            $this->load->view('templates/admin/header');
+            $this->load->view('posts/edit', $data);
+            $this->load->view('templates/admin/footer');
         }
 
       
