@@ -119,7 +119,7 @@
     <div class="col-md-7" style="padding: 5% 5% 0% 14%">
         <h2 class="bold" style="color: red;">NUESTRA FIRMA</h2>
         <p>Código UB Constructora S.A de C.V. nace en el ramo de la industria electrónica y automotriz, construimos siempre anteponiendo los principios elementales de seguridad del personal y asegurando la operación continua de nuestro cliente, creemos que nuestra fortaleza está en el capital humano con el que contamos, más 2 millones de metros cuadrados construidos pueden confirmarlo.</p>
-        <button type="button" class="btn btn-outline-dark" style="margin-right: 3vh">CONOCE MÁS</button>
+        <a class="btn btn-outline-dark" style="margin-right: 3vh" href="<?php echo base_url('firma'); ?>">CONOCE MÁS</a>
     </div>
     <div class="col-md-5">
         <img class="img-fluid" src="<?php echo base_url('img/nuestrafirma.jpg')?>" alt="" style="min-height: 462px;">
@@ -133,13 +133,78 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <div class="push"></div>
-                <button type="button" class="btn btn-outline-light" style="margin-right: 3vh">INDUSTRIAL</button>
-                <button type="button" class="btn btn-outline-light" style="margin-right: 3vh">COMERCIAL</button>
-                <button type="button" class="btn btn-outline-light">OBRA PÚBLICA</button>
+
+                <div class="d-block text-center">
+                    <button id="post-todos" type="submit" class="active btn btn-outline-gray spacingbtn">TODOS</button>
+                    <?php foreach($categorias as $categoria):?>
+                            <button  id="<?php echo $categoria['id'];?>" type="button" class="btn btn-outline-gray catbuttons spacingbtn"><?php echo $categoria['nombre']; ?></button>
+                    <?php endforeach;?>
+                    <script>
+                $('.catbuttons').click(function(){
+                $('.btn-outline-gray').removeClass('active');
+                $(this).addClass('active');  
+                });
+
+                $(document).ready(function(){
+                    $('.catbuttons').click(function(){
+                        console.log($(this).attr('id'));
+                        var catId = $(this).attr('id');
+                        $.ajax({
+                            type: "GET",
+                            dataType: 'html',
+                            url: "<?php echo base_url('pages/categoria/')?>" + catId,
+                           
+                            success: function(data) 
+                            {
+                                $('.ajax-container').fadeIn().html(data);
+                            }
+                        });
+
+
+                        $('.mosaico').children().find('.col-6').each(function(){$(this).css('margin-top', '10px')});
+                    $('.mosaico').children().find('.col-6').each(function(){$(this).css('margin-bottom', '10px')});
+
+                    });
+                });
+
+                $(document).ready(function(){
+                    ajax_posts_all();
+                    $('.mosaico').children().find('.col-6').each(function(){$(this).css('margin-top', '10px')});
+                    $('.mosaico').children().find('.col-6').each(function(){$(this).css('margin-bottom', '10px')});
+
+                });
+
+                function ajax_posts_all(){
+                    $('#post-todos').click(function(){
+                        
+                        $('.btn-outline-gray').removeClass('active');
+                        $(this).addClass('active');  
+                        $.ajax({
+                            type: "GET",
+                            dataType: 'html',
+                            url: "<?php echo base_url('pages/proyectos_all')?>",
+                           
+                            success: function(data) 
+                            {
+                                $('.ajax-container').fadeIn().html(data);
+                            }
+                        });
+                    });
+                    $('.mosaico').children().find('.col-6').each(function(){$(this).css('margin-top', '10px')});
+                    $('.mosaico').children().find('.col-6').each(function(){$(this).css('margin-bottom', '10px')});
+
+                  
+
+                }
+
+        </script>
+                </div>
             </div>
             <div class="push"></div>
+
+
                 <div class="mx-auto proyectos" >
-                    <div class="row no-gutters">
+                    <!-- <div class="row no-gutters">
                         <div class="col-6"style="padding-right: 2vh">
                             <img class="img-fluid" src="<?php echo base_url('img/tunnelproject.jpg')?>" alt="" style="height: 388px">
                         </div>
@@ -161,10 +226,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <?php $this->load->view('templates/proyectos_even.php'); ?>
                 </div>
             <div class="push"></div>
             <div class="push"></div>
         </div>
+        <div class="container">
+            <div class="row text-center" style="display: inherit">
+                <a class="white" href="<?php echo base_url('proyectos')?>">Ver más</a>
+            </div>
+        </div>
+        <div class="push"></div>
   </div>
+
 

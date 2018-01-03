@@ -20,6 +20,30 @@ class Post_model extends CI_Model {
         return $query->row_array();
     }
 
+
+    public function get_posts_by_limit(){
+
+        $this->db->limit(5);
+        $this->db->order_by('proyectos.id', 'DESC');
+        //here we are joining the tables with the id so we can access the methods of categorias 'name'
+        //$this->db->join('categorias', 'categorias.id = proyectos.categoria_id');
+        $query = $this->db->get('proyectos');
+        return $query->result_array();
+    }
+
+
+
+    public function get_proyectos_by_cat_limit($categoria_id){
+        $this->db->limit(5);
+        $this->db->order_by('proyectos.id', 'DESC');
+        // $this->db->join('categorias', 'categorias.id = 
+        // proyectos.categoria_id');
+        $query = $this->db->get_where('proyectos', array(
+            'categoria_id' => $categoria_id
+        ));
+        return $query->result_array();
+    }
+
     public function get_admin_posts(){
             $this->db->order_by('proyectos.id', 'DESC');
             $query = $this->db->get('proyectos');

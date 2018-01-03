@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+$route['pages/categoria/(:any)'] = 'pages/proyectos_by_cat_limit/$1';
 $route['proyectos/categoria/(:any)'] = 'posts/proyectos_by_cat/$1'; 
 $route['firma'] = 'pages/firma'; 
 $route['servicios'] = 'pages/servicios'; 

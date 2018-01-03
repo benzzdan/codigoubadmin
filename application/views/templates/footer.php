@@ -14,7 +14,7 @@
             </div>
             <div class="col-6 text-center middlefooter">
               <div class="form-inline" style="display: inherit">
-                <a href="#">Home</a><span>|</span><a href="#">Nuestra Firma</a><span>|</span><a href="#">Servicios</a><span>|</span><a href="#">Proyectos</a><span>|</span><a href="#">Contacto</a>
+                <a href="<?php echo base_url();?>">Home</a><span>|</span><a href="<?php echo base_url('firma');?>">Nuestra Firma</a><span>|</span><a href="<?php echo base_url('servicios');?>">Servicios</a><span>|</span><a href="<?php echo base_url('proyectos');?>">Proyectos</a><span>|</span><a href="<?php echo base_url('contacto');?>">Contacto</a>
               </div>
               <div class="push"></div>
               <div class="form-inline" style="display: inherit">

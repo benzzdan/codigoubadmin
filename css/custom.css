@@ -95,7 +95,7 @@
         max-width: 12% !important;
     }
     .proyectos {
-        width: 1030px;
+        width: 1120px;
     }
     .footarea {
         width: 1030px;
@@ -624,7 +624,28 @@ div.desc {
 .btn-outline-redblack.active {
     color: #fff;
     background-color: #cc362c;
-    border-color: black;
+    border-color: fff;
+    cursor: pointer;
+}
+
+.btn-outline-gray {
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+}
+
+.btn-outline-gray:hover {
+    color: #fff;
+    background-color: #464646;
+    border-color: fff;
+    cursor: pointer;
+}
+
+.btn-outline-gray.active {
+    color: #fff;
+    background-color: #464646;
+    border-color: fff;
     cursor: pointer;
 }
 
@@ -760,4 +781,6 @@ p.small {
     background-color: #707579;
 }
 
-.test {}
+a.white:hover {
+    color: #464646 !important;
+}
