@@ -602,3 +602,154 @@ div.desc {
     display: table;
     clear: both;
 }
+
+.spacingbtn {
+    margin-right: 5px;
+}
+
+.btn-outline-redblack {
+    color: black;
+    background-color: transparent;
+    background-image: none;
+    border-color: black;
+}
+
+.btn-outline-redblack:hover {
+    color: #fff;
+    background-color: #cc362c;
+    border-color: black;
+    cursor: pointer;
+}
+
+.btn-outline-redblack.active {
+    color: #fff;
+    background-color: #cc362c;
+    border-color: black;
+    cursor: pointer;
+}
+
+
+/* TEST */
+
+.nopad {
+    padding: unset;
+}
+
+.img-proyectos:hover {
+    cursor: pointer;
+}
+
+.mosaico .row {
+    margin-top: 2vh;
+}
+
+.mosaico .col-6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item {
+    transition: transform 0.5s ease;
+    transition: filter 0.5s ease;
+}
+
+.item:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
+
+.item:hover:after {
+    opacity: 0;
+}
+
+.img-proyectos:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(black, black);
+    opacity: .9;
+}
+
+.mosaico-grande {
+    margin-top: 5px;
+}
+
+.mosaico .caption {
+    font-size: 25px;
+}
+
+
+/* caption hover */
+
+.screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.screen:hover {
+    opacity: 1
+}
+
+p.caption {
+    color: #fff;
+    font-weight: bold;
+    font-family: futuraltbold;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+p.small {
+    font-size: 15px;
+    bottom: -52%;
+    font-family: futura;
+    font-weight: lighter;
+    color: white;
+}
+
+.screen:hover p.caption {
+    margin-left: 0;
+}
+
+.screen {
+    width: 100%;
+    bottom: 5%;
+    padding-top: 10%;
+}
+
+.screen.fade-in p.caption {
+    margin-left: 0;
+}
+
+.box {
+    position: relative;
+}
+
+.leer-mas {
+    position: relative;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #707579;
+}

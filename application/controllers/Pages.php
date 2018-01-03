@@ -19,6 +19,14 @@
             $this->load->view('templates/footer');
             
         }
+        public function servicios(){
+            
+            $this->load->view('templates/header');
+            $this->load->view('pages/servicios');
+            $this->load->view('templates/footer');
+            
+        }
+
       
 
 

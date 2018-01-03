@@ -4,12 +4,12 @@
                 <span class="selector-menu"></span>
             </a>
             <a href="<?php base_url('firma');?>">_02 Nuestra Firma
+                <span class="selector-menu"></span> 
+            </a>
+            <a href="<?php base_url('servicios');?>">_03 Servicios
                 <span class="selector-menu"></span>
             </a>
-            <a href="#">_03 Servicios
-                <span class="selector-menu"></span>
-            </a>
-            <a href="<?php echo base_url() . 'posts' ?>">_04 Proyectos
+            <a href="<?php echo base_url() . 'proyectos' ?>">_04 Proyectos
                 <span class="selector-menu"></span>
             </a>
             <a href="#">_05 Contacto

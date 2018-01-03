@@ -11,15 +11,40 @@
                     $data['posts'] = $this->post_model->get_posts();
                     $data['msg'] = $this->session->flashdata('msg');
 
-                    
-
-
+                  
                     $this->load->view('templates/header');
-                    $this->load->view('templates/menu');
                     $this->load->view('posts/index', $data);
                     $this->load->view('templates/footer');
 
                 }
+
+        public function proyectos(){
+
+                    
+                        $data['posts'] = $this->post_model->get_posts();
+                        $data['categorias'] = $this->post_model->get_cats();
+
+                        $this->load->view('templates/header');
+                        $this->load->view('posts/proyectos', $data);
+                        $this->load->view('templates/footer');
+
+                }
+
+                public function proyectos_by_cat($cat_id){
+                  
+                    
+                    $data['posts'] = $this->post_model->get_proyectos_by_cat($cat_id);
+                    $data['categorias'] = $this->post_model->get_cats();
+                    $this->load->view('templates/proyectos_even', $data);
+                }
+                public function proyectos_all(){
+                
+                    $data['posts'] = $this->post_model->get_posts();
+                    $data['categorias'] = $this->post_model->get_cats();
+                    $this->load->view('templates/proyectos_even', $data);
+                }
+
+
 
 
         public function view($slug = NULL) {
@@ -293,15 +318,12 @@
 
         }
 
-
-        public function firma(){
-            echo "gay";
-            die();
-            
-            $this->load->view('templates/admin/header');
-            $this->load->view('posts/edit', $data);
-            $this->load->view('templates/admin/footer');
+        public function callme(){
+            $data['message'] = 'call me';
         }
 
+
+
+    
       
     }

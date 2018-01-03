@@ -10,7 +10,7 @@ class Post_model extends CI_Model {
         if($slug === FALSE){
             $this->db->order_by('proyectos.id', 'DESC');
             //here we are joining the tables with the id so we can access the methods of categorias 'name'
-            $this->db->join('categorias', 'categorias.id = proyectos.categoria_id');
+            //$this->db->join('categorias', 'categorias.id = proyectos.categoria_id');
             $query = $this->db->get('proyectos');
             return $query->result_array();
         }

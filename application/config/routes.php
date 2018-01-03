@@ -1,13 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+$route['proyectos/categoria/(:any)'] = 'posts/proyectos_by_cat/$1'; 
 $route['firma'] = 'pages/firma'; 
+$route['servicios'] = 'pages/servicios'; 
 $route['categorias/borrar/(:any)'] = 'categories/borrar/$1';
 $route['admin/proyectos/actualizar'] = 'posts/update';
 $route['admin'] = 'admin/dashboard';
 $route['admin/login'] = 'admin/login';
 $route['categorias'] = 'categories/index';
 $route['admin/categorias/crear'] = 'categories/create';
-$route['proyectos'] = 'posts/index';
+$route['proyectos'] = 'posts/proyectos';
 $route['admin/proyectos/crear'] = 'posts/create';
 $route['default_controller'] = 'pages/view';
 $route['404_override'] = '';

@@ -15,6 +15,7 @@
       <div class="row">
         <div class="col-3">
         <?php $images = $this->image_model->getImages($post['id']);?>
+              
             <?php if($images) : ?>
               <img class="img-thumbnail" src="<?php echo base_url('uploads/' . $images[0]['nombre']); ?>">
             <?php else : ?>
