@@ -254,7 +254,7 @@
 
 
 
-            $this->load->view('templates/admin/header');
+            $this->load->view('templates/admin/header', $data);
             $this->load->view('posts/edit', $data);
             $this->load->view('templates/admin/footer');
         }
@@ -284,7 +284,7 @@
 
 
 
-            $this->load->view('templates/admin/header');
+            $this->load->view('templates/admin/header', $data);
             $this->load->view('posts/edit', $data);
             $this->load->view('templates/admin/footer');
         }
