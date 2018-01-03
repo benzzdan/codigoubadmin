@@ -639,10 +639,6 @@ div.desc {
     cursor: pointer;
 }
 
-.mosaico .row {
-    margin-top: 2vh;
-}
-
 .mosaico .col-6 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -679,8 +675,18 @@ div.desc {
     margin-top: 5px;
 }
 
+.mosaico-grande img {
+    max-width: 570px !important;
+    max-height: 450px !important;
+}
+
 .mosaico .caption {
     font-size: 25px;
+}
+
+.mosaico img {
+    width: 255px !important;
+    height: 213px !important;
 }
 
 
