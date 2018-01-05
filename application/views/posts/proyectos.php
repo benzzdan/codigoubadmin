@@ -21,7 +21,7 @@
                 </a>
             </div>
              <div class="img-holder">
-                <img src="<?php echo base_url('assets/images/proyectos/images/Web_Código-UB-Proyectos_02.png');?>" class="img-fluid" alt="Responsive image">
+                <img src="<?php echo base_url('assets/images/proyectos/images/Web_Codigo-UB-Proyectos_02.png');?>" class="img-fluid" alt="Responsive image">
                 <div class="caption">
                     <h1 class="white bold text-center" style="letter-spacing: 4px;">PROYECTOS</h1>
                     <p class="white text-center" style="letter-spacing: 11px">| NUESTRA EXPERIENCIA |</p>
