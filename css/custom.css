@@ -128,7 +128,7 @@
         max-width: 12% !important;
     }
     .proyectos {
-        width: 1030px;
+        min-width: 1110px;
     }
     .footarea {
         width: 1030px;
@@ -147,7 +147,7 @@
     .bigimg-container {
         padding-right: 5px !important;
         height: 100%;
-        max-height: 820px;
+        min-height: 820px;
     }
 }
 
@@ -422,6 +422,7 @@ body {
 
 .gray {
     color: #828083;
+    margin: unset;
 }
 
 footer a {
@@ -661,8 +662,8 @@ div.desc {
 }
 
 .mosaico .col-6 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
 .item {
@@ -708,6 +709,7 @@ div.desc {
 .mosaico img {
     width: 255px !important;
     height: 213px !important;
+    /* height: max-content !important; */
 }
 
 
@@ -783,4 +785,39 @@ p.small {
 
 a.white:hover {
     color: #464646 !important;
+}
+
+.servicios {
+    padding-left: 10% !important;
+    padding-right: 5% !important;
+    padding-top: 3% !important;
+    padding-bottom: 3% !important;
+}
+
+.servicios1 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/servicios/CodigoUB_Servicios_04.png');
+}
+
+.servicios2 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/servicios/CodigoUB_Servicios_05.png');
+}
+
+.servicios3 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/servicios/CodigoUB_Servicios_07.png');
+}
+
+.servicios4 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/servicios/CodigoUB_Servicios_09.png');
 }
