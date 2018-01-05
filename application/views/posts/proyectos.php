@@ -16,7 +16,7 @@
                 <a href="<?php echo base_url() . 'proyectos' ?>">_04 Proyectos
                     <span class="selector-menu"></span>
                 </a>
-                <a href="#">_05 Contacto
+                <a href="<?php echo base_url() . 'contacto' ?>">_05 Contacto
                     <span class="selector-menu"></span>
                 </a>
             </div>

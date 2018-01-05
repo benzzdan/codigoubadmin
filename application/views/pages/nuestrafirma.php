@@ -15,7 +15,7 @@
                 <a href="<?php echo base_url() . 'proyectos' ?>">_04 Proyectos
                     <span class="selector-menu"></span>
                 </a>
-                <a href="#">_05 Contacto
+                <a href="<?php echo base_url() . 'contacto' ?>">_05 Contacto
                     <span class="selector-menu"></span>
                 </a>
             </div>
@@ -47,7 +47,7 @@
                         <div class="col-6 bigimg-container">
                             <img class="img-fluid h-100" src="<?php echo base_url('assets/images/nuestra_firma/grua1.png')?>" alt="">
                         </div>
-                        <div class="col-6 mosaico">
+                        <div class="col-6 mosaico2">
                             <div class="row no-gutters" style="margin-bottom: 10px;">
                                 <div class="col mosaico-container" style="padding-right: 5px">
                                     <img class="img-fluid w-100 h-100"   src="<?php echo base_url('assets/images/nuestra_firma/mosaico1.png')?>" alt="" >

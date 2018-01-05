@@ -50,6 +50,68 @@
             
         }
 
+        public function contacto(){
+            $this->load->view('templates/header');
+            $this->load->view('pages/contacto');
+            $this->load->view('templates/footer');
+        }
+
+        public function contacto_email(){
+
+            $this->load->library('email');
+
+            $config = array(
+                'protocol' => 'smtp',
+                'smtp_host' => 'ssl://smtp.googlemail.com',
+                'smtp_port' => 465,
+                'smtp_user' => 'bensondaniel664@gmail.com',
+                'smtp_pass' => 'bd948155'
+            );
+
+            $config['mailtype'] = 'html';
+            $config['mailpath'] = "/usr/bin/sendmail"; 
+            $config['mailtype'] = 'html';
+            $config['charset']  = 'utf-8';
+            $config['wordwrap'] = TRUE;
+
+            $this->email->initialize($config);
+           
+
+            $this->email->set_newline("\r\n");
+
+
+            $this->email->from('no-reply@codigoub.com');
+            $this->email->to('bensondaniel664@gmail.com');
+            $this->email->subject('this is a test');
+
+            $data['nombre'] = $this->input->post('nombre');
+            $data['email'] = $this->input->post('email');
+            $data['mensaje'] = $this->input->post('mensaje');
+            $data['tel'] = $this->input->post('tel');
+
+
+
+            $body = $this->load->view('templates/email_contacto',$data ,TRUE);
+
+
+
+            $this->email->message($body);
+
+
+
+
+            if($this->email->send()) {
+                $this->load->view('templates/header');
+                $this->load->view('templates/email_success');
+                $this->load->view('templates/footer');
+            }else {
+                show_error($this->email->print_debugger());
+            }
+
+
+
+        }
+
       
 
 
