@@ -9,6 +9,8 @@
         <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo base_url('css/custom.css')?>">
+        <link rel="shortcut icon" href="<?php echo base_url('assets/images/favicon.ico'); ?>" type="image/x-icon">
+        <link rel="icon" href="<?php echo base_url('assets/images/favicon.ico'); ?>" type="image/x-icon">
     </head>
     <body>
          <nav class="navbar navbar-expand-lg navbar-light text-center" style="display: inherit">
