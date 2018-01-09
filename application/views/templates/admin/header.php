@@ -213,6 +213,11 @@ Agregar Categoria</a></li>
           </form>
         </li> -->
         <li class="nav-item">
+        <a class="nav-link" href="#" id="toggleNavColor" title="Cambiar de color">
+        <i class="fa fa-fw fa-adjust"></i></a>
+        </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-fw fa-sign-out"></i>Salir</a>
         </li>
@@ -222,7 +227,6 @@ Agregar Categoria</a></li>
   <div class="content-wrapper">
     <div class="container">
       <!-- <a class="btn btn-primary" href="#" id="toggleNavPosition">Toggle Fixed/Static Navbar</a> -->
-      <a class="btn btn-primary" href="#" id="toggleNavColor">Switch</a>
       <!-- Blank div to give the page height to preview the fixed vs. static navbar-->
    
 

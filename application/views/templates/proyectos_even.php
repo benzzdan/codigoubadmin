@@ -17,7 +17,7 @@
                     ?>
                 <div class="row">
                     <?php  if($flip){?>
-                        <div class="col-6 mosaico" style="min-width: 570px; min-height: 450px;">
+                        <div class="col-6 col-sm-6 mosaico" >
                             <div class="row">
                                 <?php 
                                 //empezar desde el post[1]
@@ -29,7 +29,7 @@
                                     $image_name = $this->image_model->getImages($posts[$b]['id']);
 
                                     ?>
-                                        <div class="col-6">
+                                        <div class="col-6 col-sm-6">
                                                 <div class="box">
                                                 <div class="screen mx-auto text-center" style="width: 100%">
                                                 <p class="caption"><?php echo $posts[$b]['titulo'];?></p>
@@ -46,7 +46,7 @@
                             </div>
 
                         </div>
-                        <div class="col-6 mosaico-grande" style="min-width: 570px; min-height: 450px;">
+                        <div class="col-6 col-sm-6 mosaico-grande" >
                             <?php $image_name = $this->image_model->getImages($posts[$i]['id']); ?>
                                     <div class="box">
                                         <div class="screen mx-auto text-center" style="width: 100%">
@@ -58,7 +58,7 @@
                                     </div>
                                 </div>
                     <?php }else{?>
-                        <div class="col-6 mosaico-grande" style="min-width: 570px; min-height: 450px;">
+                        <div class="col-6 col-sm-6 mosaico-grande" >
                             <?php $image_name = $this->image_model->getImages($posts[$i]['id']); ?>
                             <div class="box">
                                 <div class="screen mx-auto text-center" style="width: 100%">
@@ -70,7 +70,7 @@
                             </div>
                           
                         </div>
-                        <div class="col-6 mosaico" style="min-width: 570px; min-height: 450px;">
+                        <div class="col-6 col-sm-6 mosaico" >
                             <div class="row">
                                 <?php 
                                 //empezar desde el post[1]
@@ -82,7 +82,7 @@
                                     $image_name = $this->image_model->getImages($posts[$b]['id']);
     
                                     ?>
-                                    <div class="col-6">
+                                    <div class="col-6 col-sm-6">
                                       
                                         <div class="box">
                                             <div class="screen mx-auto text-center" style="width: 100%">

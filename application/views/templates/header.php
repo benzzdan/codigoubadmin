@@ -15,11 +15,11 @@
             <a href="<?php echo base_url() ?>">
             <img id="logo" class="img-fluid" src="<?php echo base_url('img/logocodigoub.png'); ?>" />
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto d-md-none">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -42,6 +42,6 @@
                     <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
                 </ul>
-            </div>
+            </div> -->
         </nav> 
 

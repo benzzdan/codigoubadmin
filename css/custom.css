@@ -34,6 +34,9 @@
     h2 {
         margin-bottom: 3vh;
     }
+    .firma1 {
+        height: 630px !important;
+    }
 }
 
 
@@ -53,6 +56,9 @@
     /* Styles */
     #logo {
         max-width: 30% !important;
+    }
+    .firma1 {
+        height: 630px !important;
     }
 }
 
@@ -115,6 +121,14 @@
         padding-right: 10px !important;
         height: 100%;
         max-height: 628px;
+    }
+    .mosaico {
+        min-width: 570px;
+        min-height: 450px;
+    }
+    .mosaico-grande {
+        min-width: 570px;
+        min-height: 450px;
     }
     /* Styles */
 }
@@ -838,4 +852,53 @@ a.white:hover {
     overflow: hidden;
     background-size: cover;
     background-position: center;
+}
+
+.firma1 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/nuestra_firma/grua1.png');
+    height: inherit;
+    border-top: solid white 5px;
+}
+
+.firma2 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/nuestra_firma/mosaico1.png');
+    min-height: 310px;
+    border: solid white 5px;
+}
+
+.firma3 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/nuestra_firma/mosaico2.png');
+    min-height: 310px;
+    border: solid white 5px;
+    border-right: unset;
+}
+
+.firma4 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/nuestra_firma/mosaico3.png');
+    min-height: 320px;
+    border: solid white 5px;
+    border-bottom: unset;
+}
+
+.firma5 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/nuestra_firma/mosaico4.png');
+    min-height: 320px;
+    border: solid white 5px;
+    border-bottom: unset;
+    border-right: unset;
 }

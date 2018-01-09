@@ -41,7 +41,7 @@
                 <div class="push"></div>
                 <span><img style="width: 6%"src="<?php echo base_url('img/envelope.png') ?>" alt=""> test@codigoub.com</span>
                 <div class="push"></div>               
-                <span><img style="width: 6%"src="<?php echo base_url('img/phoneicon.png') ?>" alt="">33 33 33 33 33</span>
+                <span><img style="width: 6%"src="<?php echo base_url('img/phoneicon.png') ?>" alt="">33 36 13 89 23</span>
             </div>
           </div>
         </div>

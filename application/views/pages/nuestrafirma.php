@@ -45,23 +45,32 @@
  
                     <div class="row no-gutters" style="max-height: 790px">
                         <div class="col-6 bigimg-container">
-                            <img class="img-fluid h-100" src="<?php echo base_url('assets/images/nuestra_firma/grua1.png')?>" alt="">
+                            <!-- <img class="img-fluid h-100" src="<?php echo base_url('assets/images/nuestra_firma/grua1.png')?>" alt=""> -->
+                            <div class="firma1"></div>
                         </div>
                         <div class="col-6 mosaico2">
-                            <div class="row no-gutters" style="margin-bottom: 10px;">
-                                <div class="col mosaico-container" style="padding-right: 5px">
-                                    <img class="img-fluid w-100 h-100"   src="<?php echo base_url('assets/images/nuestra_firma/mosaico1.png')?>" alt="" >
+                            <div class="row no-gutters" >
+                                <div class="col mosaico-container" >
+                                    <!-- <img class="img-fluid w-100 h-100"   src="<?php echo base_url('assets/images/nuestra_firma/mosaico1.png')?>" alt="" > -->
+                                    <div class="firma2"></div>
+
                                 </div>
-                                <div class="col mosaico-container" style="padding-left: 5px">
-                                    <img class="img-fluid w-100 h-100" src="<?php echo base_url('assets/images/nuestra_firma/mosaico2.png')?>" alt="" >
+                                <div class="col mosaico-container">
+                                    <!-- <img class="img-fluid w-100 h-100" src="<?php echo base_url('assets/images/nuestra_firma/mosaico2.png')?>" alt="" > -->
+                                    <div class="firma3"></div>
+
                                 </div>
                             </div>
                             <div class="row no-gutters">
-                                <div class="col mosaico-container" style="padding-right: 5px">
-                                    <img class="img-fluid w-100 h-100"  src="<?php echo base_url('assets/images/nuestra_firma/mosaico3.png')?>" alt="" >
+                                <div class="col mosaico-container" >
+                                    <!-- <img class="img-fluid w-100 h-100"  src="<?php echo base_url('assets/images/nuestra_firma/mosaico3.png')?>" alt="" > -->
+                                    <div class="firma4"></div>
+
                                 </div>
-                                <div class="col mosaico-container" style="padding-left: 5px" >
-                                    <img class="img-fluid w-100 h-100"  src="<?php echo base_url('assets/images/nuestra_firma/mosaico4.png')?>" alt="" >
+                                <div class="col mosaico-container" >
+                                    <!-- <img class="img-fluid w-100 h-100"  src="<?php echo base_url('assets/images/nuestra_firma/mosaico4.png')?>" alt="" > -->
+                                    <div class="firma5"></div> 
+
                                 </div>
                             </div>
                         </div>
