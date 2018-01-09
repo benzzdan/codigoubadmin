@@ -6,7 +6,6 @@ class Admin extends CI_Controller {
     public function dashboard(){
 
         if(!$this->session->userdata('logged_in')){
-            $this->session->set_flashdata('error_admin', 'No eres administrador'); 
             redirect('admin/login');
         }
 
@@ -80,7 +79,6 @@ class Admin extends CI_Controller {
 
         //Si no eres administrador
                 if(!$this->session->userdata('logged_in')){
-                    $this->session->set_flashdata('error_admin', 'No eres administrador'); 
                     redirect('admin/login');
                 }
 
@@ -104,7 +102,6 @@ class Admin extends CI_Controller {
 
 
         if(!$this->session->userdata('logged_in')){
-            $this->session->set_flashdata('error_admin', 'No eres administrador'); 
             redirect('admin/login');
         }
 
