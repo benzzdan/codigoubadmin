@@ -63,7 +63,6 @@
             $data['images'] = $this->image_model->getImages($data['post']['id']);
 
             $this->load->view('templates/header');
-            $this->load->view('templates/menu');
             $this->load->view('posts/view', $data);
             $this->load->view('templates/footer');
 
