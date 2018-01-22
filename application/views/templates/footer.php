@@ -39,7 +39,7 @@
             <h1 class="white" style="font-size: 24px;">Contacto</h1><br> 
                 <span><img style="width: 6%"src="<?php echo base_url('img/mark2.png') ?>" alt=""> Guadalajara, Jalisco</span>
                 <div class="push"></div>
-                <span><img style="width: 6%"src="<?php echo base_url('img/envelope.png') ?>" alt=""> test@codigoub.com</span>
+                <span><img style="width: 6%"src="<?php echo base_url('img/envelope.png') ?>" alt="">ventas@codigoub.com.mx</span>
                 <div class="push"></div>               
                 <span><img style="width: 6%"src="<?php echo base_url('img/phoneicon.png') ?>" alt="">33 36 13 89 23</span>
             </div>

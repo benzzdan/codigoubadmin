@@ -8,8 +8,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>SB Admin - Start Bootstrap Template</title>
+
+
+      <!-- Bootstrap core JavaScript-->
+      <script src="<?php echo base_url('vendor/jquery/jquery.min.js');?>"></script>
+    <script src="<?php echo base_url('vendor/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
   <!-- Bootstrap core CSS-->
   <link href="<?php echo base_url('vendor/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url('vendor/font-awesome/css/font-awesome.min.css');?>" rel="stylesheet" type="text/css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.2.0/min/dropzone.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +23,7 @@
   <link href="<?php echo base_url('css/sb-admin.css');?>" rel="stylesheet">
 
   <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+  
 
 </head>
 
