@@ -713,7 +713,8 @@ div.desc {
 
 .mosaico-grande img {
     max-width: 570px !important;
-    max-height: 450px !important;
+    max-height: 460px !important;
+    min-height: 456px !important;
 }
 
 .mosaico .caption {
