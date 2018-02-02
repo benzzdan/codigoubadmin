@@ -11,19 +11,19 @@
             <a  class="ninja-btn" title="menu"><span></span></a>
         </div>
         <div id="mySidenav" class="sidenav">
-            <a href="<?php echo base_url() ?>">_01 HOME
+            <a href="<?php echo base_url() ?>">01 HOME
                 <span class="selector-menu"></span>
             </a>
-            <a href="<?php echo base_url('firma'); ?>">_02 Nuestra Firma
+            <a href="<?php echo base_url('firma'); ?>">02 Nuestra Firma
                 <span class="selector-menu"></span>
             </a>
-            <a href="<?php echo base_url('servicios'); ?>">_03 Servicios
+            <a href="<?php echo base_url('servicios'); ?>">03 Servicios
                 <span class="selector-menu"></span>
             </a>
-            <a href="<?php echo base_url() . 'proyectos' ?>">_04 Proyectos
+            <a href="<?php echo base_url() . 'proyectos' ?>">04 Proyectos
                 <span class="selector-menu"></span>
             </a>
-            <a href="<?php echo base_url() . 'contacto' ?>">_05 Contacto
+            <a href="<?php echo base_url() . 'contacto' ?>">05 Contacto
                 <span class="selector-menu"></span>
             </a>
          </div>
@@ -34,7 +34,7 @@
             </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <a href="https://bootstrapcreative.com/">
+                <a href="#">
                     <!-- 
                     If you need more browser support use https://scottjehl.github.io/picturefill/
                     If a picture looks blurry on a retina device you can add a high resolution like this
@@ -60,7 +60,7 @@
             </div>
             <!-- /.carousel-item -->
             <div class="carousel-item">
-                <a href="https://bootstrapcreative.com/">
+                <a href="#">
                      <picture>
                      <source srcset="<?php echo base_url('img/construction2.jpg'); ?>" media="(min-width: 1400px)">
                      <source srcset="<?php echo base_url('img/construction2.jpg');?>" media="(min-width: 769px)">
@@ -79,7 +79,7 @@
             </div>
             <!-- /.carousel-item -->
             <div class="carousel-item">
-                <a href="https://bootstrapcreative.com/">
+                <a href="#">
                     <picture>
                         <source srcset="<?php echo base_url('img/construction6.jpg'); ?>" media="(min-width: 1400px)">
                         <source srcset="<?php echo base_url('img/construction6.jpg');?>" media="(min-width: 769px)">

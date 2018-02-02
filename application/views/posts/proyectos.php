@@ -4,19 +4,19 @@
                 <a  class="ninja-btn" title="menu"><span></span></a>
             </div>
             <div id="mySidenav" class="sidenav">
-                <a href="<?php echo base_url() ?>">_01 HOME
+                <a href="<?php echo base_url() ?>">01 HOME
                     <span class="selector-menu"></span>
                 </a>
-                <a href="<?php echo base_url('firma'); ?>">_02 Nuestra Firma
+                <a href="<?php echo base_url('firma'); ?>">02 Nuestra Firma
                     <span class="selector-menu"></span>
                 </a>
-                <a href="<?php echo base_url('servicios'); ?>">_03 Servicios
+                <a href="<?php echo base_url('servicios'); ?>">03 Servicios
                     <span class="selector-menu"></span>
                 </a>
-                <a href="<?php echo base_url() . 'proyectos' ?>">_04 Proyectos
+                <a href="<?php echo base_url() . 'proyectos' ?>">04 Proyectos
                     <span class="selector-menu"></span>
                 </a>
-                <a href="<?php echo base_url() . 'contacto' ?>">_05 Contacto
+                <a href="<?php echo base_url() . 'contacto' ?>">05 Contacto
                     <span class="selector-menu"></span>
                 </a>
             </div>
@@ -33,7 +33,7 @@
     <h1 class="bold red text-center">PROYECTOS</h1>
     <div class="push"></div>
     <p class="gray text-center">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus odio mauris, et sollicitudin ante porta id. Proin nec tempor ipsum. Duis semper non ipsum semper interdum. Ut id rutrum quam.
+    Cada proyecto con el que nos comprometemos lo desarrollamos con pasión, entrega y una gran responsabilidad, vivimos de ellos y queremos sentirnos orgullosos cada vez que pasemos frente a ellos. Razón por la cual no podemos fallar.
     </p>
 </div>
 
