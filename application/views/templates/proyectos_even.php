@@ -26,9 +26,11 @@
                                         break;
 
                                     }
-                                    $image_name = $this->image_model->getImages($posts[$b]['id']);
+                                  
 
                                     ?>
+
+                                   
                                         <div class="col-6 col-sm-6">
                                                 <div class="box">
                                                 <div class="screen mx-auto text-center" style="width: 100%">
@@ -39,7 +41,9 @@
                                                     <img class="item img-proyectos img-fluid" src="<?php echo base_url('uploads/' . $image_name[0]['nombre']);?>" alt="">
                                                 </div>
                                         </div>
+
                                 <?php
+                                    
                                 }
 
                                 ?>
@@ -47,7 +51,11 @@
 
                         </div>
                         <div class="col-6 col-sm-6 mosaico-grande" >
-                            <?php $image_name = $this->image_model->getImages($posts[$i]['id']); ?>
+                            <?php $image_name = $this->image_model->getImages($posts[$i]['id']);
+                                     if(empty($image_name)){
+                                        $image_name[0]['nombre'] = 'default-nopic.png';
+                                    }
+                            ?>
                                     <div class="box">
                                         <div class="screen mx-auto text-center" style="width: 100%">
                                             <p class="caption"><?php echo $posts[$i]['titulo'];?></p>
@@ -58,8 +66,18 @@
                                     </div>
                                 </div>
                     <?php }else{?>
+
+             
+
                         <div class="col-6 col-sm-6 mosaico-grande" >
-                            <?php $image_name = $this->image_model->getImages($posts[$i]['id']); ?>
+                            <?php $image_name = $this->image_model->getImages($posts[$i]['id']); 
+                                if(empty($image_name)){
+                                    $image_name[0]['nombre'] = 'default-nopic.png';
+                                }
+                            
+                            ?>
+
+
                             <div class="box">
                                 <div class="screen mx-auto text-center" style="width: 100%">
                                     <p class="caption"><?php echo $posts[$i]['titulo'];?></p>
@@ -70,6 +88,7 @@
                             </div>
                           
                         </div>
+
                         <div class="col-6 col-sm-6 mosaico" >
                             <div class="row">
                                 <?php 
@@ -80,6 +99,9 @@
     
                                     }
                                     $image_name = $this->image_model->getImages($posts[$b]['id']);
+                                    if(empty($image_name)){
+                                        $image_name[0]['nombre'] = 'default-nopic.png';
+                                    }
     
                                     ?>
                                     <div class="col-6 col-sm-6">
