@@ -819,7 +819,7 @@ a.white:hover {
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    background-image: url('../assets/images/servicios/CodigoUB_Servicios_05.png');
+    background-image: url('../assets/images/proyectos/images/Web_Codigo-UB-Proyectos_SCI_IMI.png');
 }
 
 .servicios3 {
@@ -852,6 +852,15 @@ a.white:hover {
     overflow: hidden;
     background-size: cover;
     background-position: center;
+}
+
+.firma_main {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/proyectos/images/Web_Codigo-UB-Proyectos_Jardin Real.png');
+    /* background-image: url('../assets/images/proyectos/images/Web_Codigo-UB-Proyectos_HONDA.png'); */
+    height: inherit;
 }
 
 .firma1 {

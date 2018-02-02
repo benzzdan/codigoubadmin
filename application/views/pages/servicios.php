@@ -33,8 +33,9 @@
     <div class="col-6 servicios">
         <h2 class="bold red">CONTRATISTA GENERAL</h2>
 
-        <p class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.</p>
+        <p class="gray">Código UB es una empresa que ha desarrollado sin número de proyectos como contratista general, gracias a la amplia experiencia
+         de su personal técnico.
+        </p>
     </div>
     <div class="col-6 servicios1">
         <!-- <img src="<?php echo base_url('assets/images/servicios/CodigoUB_Servicios_04.png');?>" alt="" class="img-fluid"> -->
@@ -48,10 +49,11 @@
         <!-- <img src="<?php echo base_url('assets/images/servicios/CodigoUB_Servicios_05.png');?>" alt="" class="img-fluid"> -->
     </div>
     <div class="col-6 servicios">
-        <h2 class="bold red">GERENCIAMIENTO Y SUPERVICIÓN DE OBRAS</h2>
+        <h2 class="bold red">GERENCIAMIENTO Y SUPERVISIÓN DE OBRAS</h2>
 
-        <p class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.</p>
+        <p class="gray">El gerenciamiento y supervisión de obras es un servicio que Código UB ha podido desarrollar con gran éxito. El compromiso 
+            de eficientar los recursos de nuestros clientes es nuestro OBJETIVO.
+        </p>
     </div>
 </div>
 <div class="row no-gutters">
@@ -59,8 +61,8 @@
     <div class="col-6 servicios">
         <h2 class="bold red">DISEÑO</h2>
 
-        <p class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.</p>
+        <p class="gray">La pasión por el diseño, la búsqueda de proyectos innovadores y el implementar procesos, materiales y sistemas de ahorro
+        de energía, nos ponene en un excelente nivel en cuanto a diseño.</p>
     </div>
     <div class="col-6 servicios3">
         <!-- <img src="<?php echo base_url('assets/images/servicios/CodigoUB_Servicios_07.png');?>" alt="" class="img-fluid"> -->
@@ -73,7 +75,7 @@
     <div class="col-6 servicios">
         <h2 class="bold red">PROYECTOS ARQUITECTÓNICOS Y EJECUTIVOS</h2>
 
-        <p class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.</p>
+        <p class="gray">Convencidos que la pasión por los proyectos, combinada con la experiencia técnica probada del personal, dan un gran resultado. 
+        Hacemos proyectos para toda una vida.</p>
     </div>
 </div>

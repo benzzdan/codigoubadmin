@@ -31,12 +31,12 @@
 <div class="container-fluid" style="padding: 3% 15% 3% 15%">
     <h1 class="bold red text-center">NUESTRA FIRMA</h1>
     <div class="push"></div>
-    <p class="gray">
+    <p class="gray" style="text-align: justify">
         Nuestra firma <strong class="red">Código UB Constructora S.A de C.V.</strong> nace en el ramo de la industria eletrónica y automotriz, contruimos siempre
         anteponiendo los principios elementales de seguridad del personal y asegurando la operación continua de nuestro cliente, creemos que nuetra fortaleza está
         en el capital humano con el que contamos, más de 2 millones de metros cuadrados contruidos pueden confirmarlo.
     </p>
-    <p class="gray">
+    <p class="gray" style="text-align: justify">
         <strong class="red">UBC</strong> (Uniform Building Code) es y será nuestra inspiración, saber, seguir y cumplir las normas y códigos de construcción es nuestro 
         compromiso, buscamos en cada proyecto superar las expectativas de nuestros clientes en seguridad, calidad y servicio. Ganar a nuestros clientes para quedarnos permanentemente 
         con ellos es nuestro objetivo final, solo así, sentimos haber cumplido.

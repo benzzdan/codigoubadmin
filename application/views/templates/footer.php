@@ -9,7 +9,7 @@
               <div class="push d-none d-sm-block"></div>
               <p class="white">
                 Código UB Constructora S.A de C.V.
-                es una empresa dedicada y comprometida con la construcción, que cuenta con personal con amplia.
+                es una empresa dedicada y comprometida con la construcción, que cuenta con personal con amplia experiencia.
               </p>
             </div>
             <div class="col-6 text-center middlefooter">
