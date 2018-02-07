@@ -123,7 +123,7 @@
         <div class="push"></div>
     </div>
     <div class="col-md-5 firma_main">
-        <!-- <img class="img-fluid" src="<?php echo base_url('assets/images/proyectos/images/Web_Codigo-UB-Proyectos_Jardin Real.png')?>" alt="" style="min-height: 462px;"> -->
+        <!-- <img class="img-fluid" src="<?php echo base_url('assets/images/nuestra_firma_home.png')?>" alt="" style="min-height: 462px;"> -->
     </div>
   </div>
   <div class="w-100" style="background-color: #a8a9ab; min-height: 500px;">
