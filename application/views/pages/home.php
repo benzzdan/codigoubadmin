@@ -43,10 +43,10 @@
                     What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
                      -->
                      <picture>
-                      <source srcset="<?php echo base_url('img/construction7.jpg'); ?>" media="(min-width: 1400px)">
-                      <source srcset="<?php echo base_url('img/construction7.jpg');?>" media="(min-width: 769px)">
-                       <source srcset="<?php echo base_url('img/construction7.jpg');?>" media="(min-width: 577px)">
-                      <img srcset="<?php echo base_url('img/construction7.jpg');?>" alt="responsive image" class="d-block img-fluid">
+                      <source srcset="<?php echo base_url('assets/images/banner01.jpg'); ?>" media="(min-width: 1400px)">
+                      <source srcset="<?php echo base_url('assets/images/banner01.jpg');?>" media="(min-width: 769px)">
+                       <source srcset="<?php echo base_url('assets/images/banner01.jpg');?>" media="(min-width: 577px)">
+                      <img srcset="<?php echo base_url('assets/images/banner01.jpg');?>" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption">
@@ -62,10 +62,10 @@
             <div class="carousel-item">
                 <a href="#">
                      <picture>
-                     <source srcset="<?php echo base_url('img/construction2.jpg'); ?>" media="(min-width: 1400px)">
-                     <source srcset="<?php echo base_url('img/construction2.jpg');?>" media="(min-width: 769px)">
-                      <source srcset="<?php echo base_url('img/construction2.jpg');?>" media="(min-width: 577px)">
-                     <img srcset="<?php echo base_url('img/construction2.jpg');?>" alt="responsive image" class="d-block img-fluid">
+                     <source srcset="<?php echo base_url('assets/images/banner03.jpg'); ?>" media="(min-width: 1400px)">
+                     <source srcset="<?php echo base_url('assets/images/banner03.jpg');?>" media="(min-width: 769px)">
+                      <source srcset="<?php echo base_url('assets/images/banner03.jpg');?>" media="(min-width: 577px)">
+                     <img srcset="<?php echo base_url('assets/images/banner03.jpg');?>" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption justify-content-center align-items-center">
@@ -81,10 +81,10 @@
             <div class="carousel-item">
                 <a href="#">
                     <picture>
-                        <source srcset="<?php echo base_url('img/construction6.jpg'); ?>" media="(min-width: 1400px)">
-                        <source srcset="<?php echo base_url('img/construction6.jpg');?>" media="(min-width: 769px)">
-                        <source srcset="<?php echo base_url('img/construction6.jpg');?>" media="(min-width: 577px)">
-                        <img srcset="<?php echo base_url('img/construction6.jpg');?>" alt="responsive image" class="d-block img-fluid">
+                        <source srcset="<?php echo base_url('assets/images/banner02.jpg'); ?>" media="(min-width: 1400px)">
+                        <source srcset="<?php echo base_url('assets/images/banner02.jpg');?>" media="(min-width: 769px)">
+                        <source srcset="<?php echo base_url('assets/images/banner02.jpg');?>" media="(min-width: 577px)">
+                        <img srcset="<?php echo base_url('assets/images/banner02.jpg');?>" alt="responsive image" class="d-block img-fluid">
                     </picture>
 
                     <div class="carousel-caption justify-content-center align-items-center">
