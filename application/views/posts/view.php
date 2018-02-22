@@ -22,14 +22,16 @@
                     <span class="selector-menu"></span>
                 </a>
             </div>
-             <div class="img-holder">
-                <!-- <img src="<?php echo base_url('uploads/' . $images[0]['nombre']);?>" class="img-fluid fullw-image" alt="Responsive image"> -->
-                <div class="w-100 fullw-img" style="height: 450px;background-image: url('../uploads/<?php echo $images[0]['nombre'];?>')"></div>
-                <div class="caption">
-                    <h1 class="white bold text-center" style="letter-spacing: 4px;"><?php echo $post['titulo'] ?></h1>
-                    <p class="white text-center" style="letter-spacing: 11px">| CODIGO UB |</p>
-                </div>
-             </div> 
+             <?php if($images): ?>
+                <div class="img-holder">
+                    <!-- <img src="<?php echo base_url('uploads/' . $images[0]['nombre']);?>" class="img-fluid fullw-image" alt="Responsive image"> -->
+                    <div class="w-100 fullw-img" style="height: 450px;background-image: url('../uploads/<?php echo $images[0]['nombre'];?>')"></div>
+                    <div class="caption">
+                        <h1 class="white bold text-center" style="letter-spacing: 4px;"><?php echo $post['titulo'] ?></h1>
+                        <p class="white text-center" style="letter-spacing: 11px">| CODIGO UB |</p>
+                    </div>
+                </div> 
+            <?php endif; ?>
 
 </div>
 
