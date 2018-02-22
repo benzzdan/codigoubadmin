@@ -31,6 +31,7 @@
               <img class="img-thumbnail" src="<?php echo base_url('uploads/default-nopic.png') ; ?>">
             <?php endif; ?>
         </div>
+        <p>esta es una prueab!</p>
         <div class="col-8">        
             <h3><?php echo $proyecto['titulo']; ?></h3>
             <small><?php echo $proyecto['creado']?></small> 
