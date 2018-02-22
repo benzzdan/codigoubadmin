@@ -58,13 +58,17 @@ class Post_model extends CI_Model {
 
     public function create_post(){
         $slug = url_title($this->input->post('titulo')); 
+        $title = $this->input->post('titulo');
 
         $data = array(
-            'titulo' => $this->input->post('titulo'),
+            'titulo' => iconv('UTF-8','ASCII//TRANSLIT',$title),
             'slug' => $slug,
             'descripcion' => $this->input->post('descripcion'),
             'categoria_id' => $this->input->post('categoria_id')
         );
+
+        print_r($data['titulo']);
+        die();
 
          $this->db->insert('proyectos', $data);
 
@@ -78,18 +82,38 @@ class Post_model extends CI_Model {
         return true;
     }
 
+    public function normalizeString($string){
+
+        $normalizeChars = array(
+            'Š'=>'S', 'š'=>'s', 'Ð'=>'Dj','Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A',
+            'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E', 'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I',
+            'Ï'=>'I', 'Ñ'=>'N', 'Ń'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U', 'Ú'=>'U',
+            'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss','à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a',
+            'å'=>'a', 'æ'=>'a', 'ç'=>'c', 'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i',
+            'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ń'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o', 'ö'=>'o', 'ø'=>'o', 'ù'=>'u',
+            'ú'=>'u', 'û'=>'u', 'ü'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y', 'ƒ'=>'f',
+            'ă'=>'a', 'î'=>'i', 'â'=>'a', 'ș'=>'s', 'ț'=>'t', 'Ă'=>'A', 'Î'=>'I', 'Â'=>'A', 'Ș'=>'S', 'Ț'=>'T',
+        );
+
+        return  strtr($string, $normalizeChars);
+
+    }
+
+
 
     public function update_post(){
         //gets the data from the submitted form
         $slug = url_title($this->input->post('titulo')); 
+        $title = $this->input->post('titulo');
 
         $data = array(
-            'titulo' => $this->input->post('titulo'),
-            'slug' => $slug,
+            'titulo' => $title,
+            'slug' => $this->normalizeString($slug),
             'descripcion' => $this->input->post('descripcion'),
             'categoria_id' => $this->input->post('categoria_id')
         );
 
+       
 
         $this->db->where('id', $this->input->post('id'));
         return $this->db->update('proyectos', $data);
@@ -141,6 +165,7 @@ class Post_model extends CI_Model {
 
         return $query->row_array();
     }
+
 
 
 
