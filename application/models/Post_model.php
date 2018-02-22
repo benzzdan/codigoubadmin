@@ -111,7 +111,7 @@ class Post_model extends CI_Model {
             'slug' => $this->normalizeString($slug),
             'descripcion' => $this->input->post('descripcion'),
             'categoria_id' => $this->input->post('categoria_id')
-        );
+        ); 
 
        
 
