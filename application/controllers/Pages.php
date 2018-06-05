@@ -62,14 +62,14 @@
 
             $config = array(
                 'protocol' => 'smtp',
-                'smtp_host' => 'ssl://smtp.googlemail.com',
-                'smtp_port' => 465,
-                'smtp_user' => 'bensondaniel664@gmail.com',
+                'smtp_host' => 'smtp.sendgrid.net',
+                'smtp_port' => 2525,
+                'smtp_user' => 'benzzdan',
                 'smtp_pass' => 'bd948155'
             );
 
             $config['mailtype'] = 'html';
-            $config['mailpath'] = "/usr/bin/sendmail"; 
+            $config['mailpath'] = "/usr/lib/sm.bin/sendmail"; 
             $config['mailtype'] = 'html';
             $config['charset']  = 'utf-8';
             $config['wordwrap'] = TRUE;
