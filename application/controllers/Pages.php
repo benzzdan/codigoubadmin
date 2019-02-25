@@ -65,7 +65,7 @@
                 'smtp_host' => 'smtp.sendgrid.net',
                 'smtp_port' => 2525,
                 'smtp_user' => 'apikey',
-                'smtp_pass' => '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'
+                'smtp_pass' => getenv('SENDGRID_API_KEY')
             );
 
             $config['mailtype'] = 'html';
