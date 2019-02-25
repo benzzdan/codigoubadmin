@@ -63,9 +63,9 @@
             $config = array(
                 'protocol' => 'smtp',
                 'smtp_host' => 'smtp.sendgrid.net',
-                'smtp_port' => 2525,
-                'smtp_user' => 'benzzdan',
-                'smtp_pass' => 'bd948155'
+                'smtp_port' => 25,
+                'smtp_user' => 'api',
+                'smtp_pass' => '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'
             );
 
             $config['mailtype'] = 'html';
