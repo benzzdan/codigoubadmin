@@ -81,7 +81,8 @@
 
 
             $this->email->from('no-reply@codigoub.com');
-            $this->email->to('bensondaniel664@gmail.com');
+            $this->email->to(
+                array('bensondaniel664@gmail.com', 'ventas@codigoub.com.mx'));
             $this->email->subject('this is a test');
 
             $data['nombre'] = $this->input->post('nombre');
